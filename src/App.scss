@@ -20,7 +20,7 @@ nav {
   padding: 2rem;
   overflow: hidden;
   background-color: rgb(177, 172, 172);
-
+  z-index: 100;
   background: rgba(155, 155, 155, 0.13);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.7px);
@@ -45,16 +45,22 @@ nav {
 
     li {
       background-color: rgb(4, 137, 146);
-      padding: 1rem 1rem;
+ 
       cursor: pointer;
       border-radius: 1.4rem;
       transition: all ease-in-out 0.3s;
+      overflow: hidden;
+      padding: 1rem 0rem;
       a {
+        
         color: white;
         font-size: 1rem;
         letter-spacing: 5px;
         font-weight: bold;
         text-decoration: none;
+        padding: 2rem 1rem ;
+        
+        border-radius: 1.4rem;
       }
 
       &:hover {
@@ -115,14 +121,17 @@ nav {
 main{
     display: grid;
     grid-template-columns:0.5fr 1fr 1fr 1fr;
-  margin-top: 5rem;
+    
+  // margin-top: 5rem;
 
-  // background-color: red;
+  background-image: url('../src/assets/background.jpg') ;
+  background-position: center;
+  background-size: cover;
 
 
 
     section{
-       
+   
         grid-column: 1/3;
         grid-row: 1/4;
        display: flex;
@@ -163,7 +172,6 @@ main{
 
 
             &:hover {
-                background-color: red;
                 box-shadow: 1px 1px 8px white;
               }
          }
@@ -178,7 +186,7 @@ main{
     article{
         background-color: rgb(66, 66, 124);
         grid-column: 3/5;
-        grid-row: 1 / 4;   
+        grid-row: 2/ 3;   
         display: flex;
         overflow: hidden;
         width: 90%;
@@ -241,6 +249,7 @@ main{
   color: white;
   margin-top: 3rem;
   letter-spacing: 0.5rem;
+ 
 }
 .launches_container{
   display: flex;
@@ -248,8 +257,12 @@ main{
     justify-content: center;
     gap :2rem;
     margin-top: 4rem;
-   
-    
+    padding: 2rem;
+    background-color: red;
+    background-image: url('../src/assets/background.jpg') ;
+  
+      
+
 
   section{
     // border: 1px solid white;
